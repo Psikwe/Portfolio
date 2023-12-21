@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+  transition-duration: 5s;
+}
+
+/* ********** scrollbar-color-change ********** */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f80001;
+}
+
+.border-sm {
+  border-width: 0.1px;
+}
+
+.tracking-xl {
+  letter-spacing: 20px;
+}
+
+.tracking-lg {
+  letter-spacing: 10px;
+}
+
+.border-radius-full {
+  border-radius: 50%;
+}
+
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: #f80001 !important;
+}
+
+/* ********** animations ********** */
+
+.slide-in-right {
+  animation: slide-in-right 0.9s forwards;
+}
+
+.fade-in {
+  animation: fade-in 0.8s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.9s forwards;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-top-bounce {
+  animation: slide-in-top-bounce 1.1s forwards;
+}
+
+@keyframes slide-in-top-bounce {
+  from {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(10%);
+  }
+  60% {
+    transform: translateY(-5%);
+  }
+  80% {
+    transform: translateY(2.5%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-water {
+  animation: vibrate 0.5s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(2px, -2px);
+  }
+
+  50% {
+    transform: translate(0, -4px);
+  }
+
+  75% {
+    transform: translate(-2px, -2px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.carousel .control-dots {
+  display: none;
+}
+
+.logo {
+  filter: invert(13%) sepia(98%) saturate(7492%) hue-rotate(1deg)
+    brightness(112%) contrast(111%);
+}
+
+.light-black {
+  background-color: #262626;
+}
+
+.red-color {
+  color: #f80001;
+}
+
+.small-margin-top {
+  margin-top: 2px;
+}
+
+.light-black {
+  background-color: #262626;
+}
+
+.carousel .control-next.control-arrow:before::hover {
+  border-left: none;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid red;
+}
+.carousel .control-prev.control-arrow:before {
+  border-left: 8px solid red;
+}
+
+.carousel .control-dots .dot {
+  background: red;
+}
+
+.h-xl {
+  height: 30rem;
+}
+
+.list {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
+
+.list::after {
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.list:hover {
+  color: white;
+}
+
+.list:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

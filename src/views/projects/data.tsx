@@ -1,0 +1,109 @@
+import workoutImg from "../../assets/images/workout.png";
+import acs from "../../assets/images/acs.png";
+import nabs from "../../assets/images/nabs.png";
+import mtn from "../../assets/images/mtn.png";
+import wk_login from "../../assets/images/wk_login.png";
+import wk_home from "../../assets/images/wk_home.png";
+import wk_signup from "../../assets/images/wk_signup.png";
+import { AiFillGithub } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
+
+export const imgs = [
+  {
+    img: workoutImg,
+    title: "Workout Logger",
+    link: "#",
+    passage:
+      "A personal project built with REACT and NODE js which users are able to keep track of their daily workout activities.",
+  },
+  {
+    img: nabs,
+    title: "NABS GROUP CLIENT PORTAL",
+    passage:
+      "As a developer at ACS, I had the opportunity to work on a project with React and TypeScript aimed at assisting users in logging into the portal to view and apply for trips and jobs",
+    link: "https://client.nabsgroupgh.com",
+    linkName: "client.nabsgroupgh.com/",
+  },
+  {
+    img: mtn,
+    title: "BROADBAND ESHOP MTN",
+    passage:
+      "As a developer at ACS, I had the opportunity to contribute to the frontend of a project aimed at assisting users in purchasing broadband fiber services for a renowned telecommunications network in Ghana, using JavaScript, HTML, and CSS.",
+    link: "https://broadband.mtn.com.gh/",
+    linkName: "broadband.mtn.com.gh/",
+  },
+  {
+    img: acs,
+    title: "THE ACS WEBSITE",
+    passage:
+      "As a developer at ACS, I had the opportunity to build the company's website using ReactJS, where others could apply for job opportunities being offered by the company.",
+    link: "https://acsint.io/",
+    linkName: "acsint.io/",
+  },
+];
+
+export const workoutPortal = [wk_login, wk_signup, wk_home];
+
+export const workoutStack = [
+  {
+    stack: "React JS",
+  },
+  {
+    stack: "CSS 3",
+  },
+  {
+    stack: "Context API",
+  },
+];
+
+export const workoutFooter = [
+  {
+    name: "Code",
+    github: <AiFillGithub size={20} />,
+    link: "https://github.com/Psikwe/Portfolio",
+  },
+  // {
+  //   name: "Demo",
+  //   github: <FiExternalLink size={20} />,
+  //   link: "https://github.com/Psikwe/stock-management-system",
+  // },
+];
+
+export const workoutDescription = {
+  desc: "A personal project built with REACT and NODE js which users are able to keep track of their daily workout activities.",
+};
+
+export const stockupData = [
+  {
+    stack: "React TS",
+  },
+  {
+    stack: "TailwindCSS",
+  },
+  {
+    stack: "Redux Toolkit",
+  },
+  {
+    stack: "Express JS",
+  },
+  {
+    stack: "Mongodb",
+  },
+];
+
+export const stockupFooter = [
+  {
+    name: "Code",
+    github: <AiFillGithub size={20} />,
+    link: "https://github.com/Psikwe/Portfolio",
+  },
+  // {
+  //   name: "Demo",
+  //   github: <FiExternalLink size={20} />,
+  //   link: "https://github.com/Psikwe/stock-management-system",
+  // },
+];
+
+export const stockupDescription = {
+  desc: "A personal project built to manage stock of products inventory.",
+};

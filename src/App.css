@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("assets/fonts/PT_Serif_Caption/PTSerifCaption-Regular.ttf")
+    format("truetype");
+}
+body {
+  font-family: "PTSans-Regular", courier, serif;
+}
