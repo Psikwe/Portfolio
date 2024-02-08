@@ -16,7 +16,8 @@ function App() {
       <Banner />
       <About />
       {/* <WhatIDo /> */}
-      <Projects /> <Skills />
+      <Projects />
+      <Skills />
       <Certification />
       <Experience />
       <Footer />

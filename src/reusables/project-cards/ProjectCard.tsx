@@ -4,7 +4,7 @@ import { IProjectCard } from "../../core/interfaces";
 const ProjectCard = (props: IProjectCard) => {
   return (
     <div
-      className={`flex ${props.direction} items-center light-black from-laptop-to-laptop-xl:mx-20 mt-10 laptop-xl:mx-72 p-8`}
+      className={`flex ${props.direction} mobile:flex mobile:flex-col items-center light-black from-laptop-to-laptop-xl:mx-20 mt-10 laptop-xl:mx-72 p-8`}
     >
       <div>
         <img className="w-full h-full object-contain" src={props.img} />

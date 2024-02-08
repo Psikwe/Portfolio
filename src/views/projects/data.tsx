@@ -60,7 +60,7 @@ export const workoutFooter = [
   {
     name: "Code",
     github: <AiFillGithub size={20} />,
-    link: "https://github.com/Psikwe/Portfolio",
+    link: "https://github.com/Psikwe/Workout/tree/alpha",
   },
   // {
   //   name: "Demo",
@@ -95,13 +95,8 @@ export const stockupFooter = [
   {
     name: "Code",
     github: <AiFillGithub size={20} />,
-    link: "https://github.com/Psikwe/Portfolio",
+    link: "https://github.com/Psikwe/StockUp/tree/alpha",
   },
-  // {
-  //   name: "Demo",
-  //   github: <FiExternalLink size={20} />,
-  //   link: "https://github.com/Psikwe/stock-management-system",
-  // },
 ];
 
 export const stockupDescription = {
