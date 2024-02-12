@@ -3,7 +3,7 @@ import { ICard } from "../core/interfaces";
 
 const CertificationCard = (props: ICard) => {
   return (
-    <div id={props.id} className="w-80 text-justify  bg-ttesGray">
+    <div id={props.id} className="w-80 text-justify bg-ttesGray">
       <div className="relative">
         <img
           id={props.id}

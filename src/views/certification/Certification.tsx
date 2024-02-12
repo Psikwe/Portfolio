@@ -24,7 +24,7 @@ const Certification = (props: Props) => {
         </div>
       </h3>
 
-      <div className="from-laptop-to-laptop-xl:flex from-laptop-to-laptop-xl:justify-around mx-10 from-tablet-to-mobile:grid mobile:grid-col-2 tablet:grid-cols-2 gap-4 scroll-mt-32 mt-4">
+      <div className="from-laptop-to-laptop-xl:flex from-laptop-to-laptop-xl:justify-around mx-10 from-tablet-to-mobile:grid mobile:grid-col-2 place-items-center tablet:grid-cols-2 gap-4 scroll-mt-32 mt-4">
         {certificationData.map((c) => (
           <>
             <div className="flip-card">
@@ -38,7 +38,7 @@ const Certification = (props: Props) => {
                     priority={true}
                     cardHeader={c.company}
                     cardDescription={c.duration}
-                  />``
+                  />
                 </div>
                 <div className="flip-card-back">
                   {filteredData.map((item, index) => (

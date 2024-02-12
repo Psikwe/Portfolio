@@ -29,7 +29,7 @@ const Skills: React.FC = ({}) => {
               className="border-2 flex rounded-full items-center mobile:my-5"
             >
               <img
-                className="w-20 mr-9 rounded-full from-laptop-to-laptop-xl:grayscale hover:grayscale-0 hover:shadow-2xl transition duration-500 ease-out hover:-translate-y-1"
+                className="from-laptop-to-laptop-xl:w-20 tablet:w-20 mr-9 rounded-full from-laptop-to-laptop-xl:grayscale hover:grayscale-0 hover:shadow-2xl transition duration-500 ease-out hover:-translate-y-1"
                 src={sc.logo}
               />
             </div>
