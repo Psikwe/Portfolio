@@ -8,3 +8,13 @@ export type IProjectCard = {
   footer?: any[];
   direction?: string;
 };
+
+export type ICard = {
+  src: any;
+  className: string;
+  id: string;
+  alt: string;
+  priority: boolean;
+  cardHeader: string;
+  cardDescription: string;
+};

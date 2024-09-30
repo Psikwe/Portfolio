@@ -289,7 +289,7 @@ const Banner: React.FC = ({}) => {
                 loop={true}
                 cursorStyle="_"
                 cursorColor="red"
-                typeSpeed={100}
+                typeSpeed={50}
                 deleteSpeed={50}
                 delaySpeed={2000}
               />
