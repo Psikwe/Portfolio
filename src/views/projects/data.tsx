@@ -6,7 +6,7 @@ import wk_login from "../../assets/images/wk_login.png";
 import wk_home from "../../assets/images/wk_home.png";
 import wk_signup from "../../assets/images/wk_signup.png";
 import { AiFillGithub } from "react-icons/ai";
-import { FiExternalLink } from "react-icons/fi";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const imgs = [
   {
@@ -73,6 +73,25 @@ export const workoutDescription = {
   desc: "A personal project built with REACT and NODE js which users are able to keep track of their daily workout activities.",
 };
 
+export const resterData = [
+  {
+    stack: "React TS",
+  },
+  {
+    stack: "TailwindCSS",
+  },
+  {
+    stack: "Redux Toolkit",
+  },
+];
+export const ttomData = [
+  {
+    stack: "React TS",
+  },
+  {
+    stack: "TailwindCSS",
+  },
+];
 export const stockupData = [
   {
     stack: "React TS",
@@ -98,7 +117,27 @@ export const stockupFooter = [
     link: "https://github.com/Psikwe/StockUp/tree/alpha",
   },
 ];
+export const resterFooter = [
+  {
+    name: "Demo",
+    github: <FaExternalLinkAlt size={15} />,
+    link: "https://rester-frontend-pi.vercel.app/",
+  },
+];
+export const ttomFooter = [
+  {
+    name: "Demo",
+    github: <FaExternalLinkAlt size={15} />,
+    link: "https://ttomconstruction.netlify.app/",
+  },
+];
 
 export const stockupDescription = {
   desc: "A personal project built to manage stock of products inventory.",
+};
+export const resterDescription = {
+  desc: "A comprehensive HRIS application that streamlines company and employee onboarding, automates tax calculations, and manages employee payrolls and other essential HR operations.",
+};
+export const ttomDescription = {
+  desc: "A clean and user-friendly website built for a construction firm, showcasing their services, portfolio, and contact information.",
 };

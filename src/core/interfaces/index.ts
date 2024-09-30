@@ -17,4 +17,5 @@ export type ICard = {
   priority: boolean;
   cardHeader: string;
   cardDescription: string;
+  link?: string;
 };
