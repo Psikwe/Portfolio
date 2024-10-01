@@ -4,6 +4,7 @@ import { BsDot } from "react-icons/bs";
 import ToggleMenu from "./ToggleMenu";
 import profile from "../assets/images/profile.png";
 import { Offcanvas, Ripple, initTE } from "tw-elements";
+import { footerItems } from "../views/footer/_data";
 
 type INavbar = {
   navName?: string;
@@ -96,21 +97,36 @@ const Navbar: React.FC<INavbar> = ({}) => {
               ))}
             </ul>
           </div>
-          <a
-            className="flex"
-            target={"_blank"}
-            href="mailto:kwesiboateng436@gmail.com"
-          >
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={divVariantsFromLeft}
-              transition={{ duration: 1.2 }}
-              className="p-2 border-solid border-sm w-full text-red-500 border-red-600 rounded-sm hover:bg-red-600 hover:text-white mobile:hidden duration-500"
+          <div className="flex justify-center items-center">
+            {footerItems
+              .filter((i) => {
+                return i.key !== "3";
+              })
+              .map((f) => (
+                <a key={f.key} target="_blank" href={f.link}>
+                  <ul>
+                    <li className="mr-8 text-gray-500 hover:text-white hover:-translate-y-1 duration-500">
+                      {f.icon}
+                    </li>
+                  </ul>
+                </a>
+              ))}{" "}
+            <a
+              className="flex"
+              target={"_blank"}
+              href="mailto:kwesiboateng436@gmail.com"
             >
-              <h2 className="text-sm">Get In Touch</h2>
-            </motion.div>
-          </a>
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={divVariantsFromLeft}
+                transition={{ duration: 1.2 }}
+                className="p-2 border-solid border-sm w-full text-red-500 border-red-600 rounded-sm hover:bg-red-600 hover:text-white mobile:hidden duration-500"
+              >
+                <h2 className="text-sm">Get In Touch</h2>
+              </motion.div>
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -137,10 +153,11 @@ const Navbar: React.FC<INavbar> = ({}) => {
                 </motion.li>
               ))}
             </ul>
+
             <a
               className="absolute bottom-0 right-0"
               target={"_blank"}
-              href="mailto:kwesiboateng436@gmail.com"
+              href="mailto:frontechie@gmail.com"
             >
               <div className="m-3">
                 <motion.div

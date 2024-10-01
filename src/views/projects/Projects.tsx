@@ -1,9 +1,23 @@
 import wk_login from "../../assets/images/wk_login.png";
 import rester from "../../assets/images/rester.png";
+import mtn from "../../assets/images/mtn.png";
+import mtnBenin from "../../assets/images/mtn-benin.png";
+import nabsJobs from "../../assets/images/nabs-jobs.png";
+import nabsTrips from "../../assets/images/nabs-trips.png";
 import ttom from "../../assets/images/ttom.png";
 import stockup from "../../assets/images/stockup.png";
 import ProjectCard from "../../reusables/project-cards/ProjectCard";
 import {
+  mtnBeninData,
+  mtnBeninDescription,
+  mtnBeninFooter,
+  mtnData,
+  mtnDescription,
+  mtnFooter,
+  nabsJobsDescription,
+  nabsJobsFooter,
+  nabsTripsDescription,
+  nabsTripsFooter,
   resterData,
   resterDescription,
   resterFooter,
@@ -35,8 +49,109 @@ const Projects = () => {
             />
           </div>
         </div>
+
         <ProjectCard
-          direction="flex-row-reverse "
+          direction="flex-row-reverse"
+          img={mtn}
+          caption="MTN Ghana Broadband"
+          stack={mtnData.map((stack, index) => (
+            <span
+              key={index}
+              className="text-xs mr-2 p-1 border-solid border-sm border-red-700 rounded-sm"
+            >
+              {stack.stack}
+            </span>
+          ))}
+          description={mtnDescription.desc}
+          footer={mtnFooter.map((link, index) => (
+            <a target="_blank" href={link.link}>
+              <span
+                key={index}
+                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
+              >
+                <span className="pr-1">{link.name}</span>
+                {link.github}
+              </span>
+            </a>
+          ))}
+        />
+        <ProjectCard
+          direction="flex-row"
+          img={mtnBenin}
+          caption="MTN Hype Benin"
+          stack={mtnBeninData.map((stack, index) => (
+            <span
+              key={index}
+              className="text-xs mr-2 p-1 border-solid border-sm border-red-700 rounded-sm"
+            >
+              {stack.stack}
+            </span>
+          ))}
+          description={mtnBeninDescription.desc}
+          footer={mtnBeninFooter.map((link, index) => (
+            <a target="_blank" href={link.link}>
+              <span
+                key={index}
+                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
+              >
+                <span className="pr-1">{link.name}</span>
+                {link.github}
+              </span>
+            </a>
+          ))}
+        />
+        <ProjectCard
+          direction="flex-row-reverse"
+          img={nabsJobs}
+          caption="Nabs Jobs"
+          stack={resterData.map((stack, index) => (
+            <span
+              key={index}
+              className="text-xs mr-2 p-1 border-solid border-sm border-red-700 rounded-sm"
+            >
+              {stack.stack}
+            </span>
+          ))}
+          description={nabsTripsDescription.desc}
+          footer={nabsJobsFooter.map((link, index) => (
+            <a target="_blank" href={link.link}>
+              <span
+                key={index}
+                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
+              >
+                <span className="pr-1">{link.name}</span>
+                {link.github}
+              </span>
+            </a>
+          ))}
+        />
+        <ProjectCard
+          direction="flex-row"
+          img={nabsTrips}
+          caption="Nabs Trips"
+          stack={resterData.map((stack, index) => (
+            <span
+              key={index}
+              className="text-xs mr-2 p-1 border-solid border-sm border-red-700 rounded-sm"
+            >
+              {stack.stack}
+            </span>
+          ))}
+          description={nabsTripsDescription.desc}
+          footer={nabsTripsFooter.map((link, index) => (
+            <a target="_blank" href={link.link}>
+              <span
+                key={index}
+                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
+              >
+                <span className="pr-1">{link.name}</span>
+                {link.github}
+              </span>
+            </a>
+          ))}
+        />
+        <ProjectCard
+          direction="flex-row-reverse"
           img={rester}
           caption="Rester (for a client)"
           stack={resterData.map((stack, index) => (
