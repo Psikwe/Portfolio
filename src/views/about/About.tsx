@@ -17,7 +17,7 @@ const About: React.FC<IAbout> = ({}) => {
           className="from-laptop-to-laptop-xl:rounded-xl object-contain mr-20 w-96 h-[400px] mobile:m-auto from-tablet-to-mobile:rounded-full from-tablet-to-mobile:w-40 from-tablet-to-mobile:h-40 mobile:h-40 mobile:w-40"
         />
         <div className="slide-in-left">
-          <div className="text-2xl flex justify-center uppercase tracking-xl text-gray-500 mobile:pt-8 mobile:pb-1 ">
+          <div className="text-2xl mobile:text-sm flex justify-center uppercase tracking-xl text-gray-500 mobile:pt-8 mobile:pb-1 ">
             <div className="mobile:w-4 flex items-center">
               <BiStop color="#ef4444" />
             </div>

@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <>
       <div id="projects" className="scroll-mt-32 mt-28 laptop-xl:mx-72 ">
-        <div className="text-gray-500 flex justify-center text-center uppercase text-2xl tracking-xl">
+        <div className="text-gray-500 flex justify-center text-center uppercase mobile:text-sm text-2xl tracking-xl">
           <div className="mobile:w-4 flex items-center">
             <BiStop color="#ef4444" />
           </div>
@@ -36,7 +36,7 @@ const Projects = () => {
           </div>
         </div>
         <ProjectCard
-          direction="flex-row-reverse"
+          direction="flex-row-reverse "
           img={rester}
           caption="Rester (for a client)"
           stack={resterData.map((stack, index) => (

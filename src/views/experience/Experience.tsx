@@ -21,7 +21,7 @@ const Experience: React.FC = (props: Props) => {
   return (
     <>
       <div id="experience" className="scroll-mt-32  mt-28 laptop-xl:mx-72">
-        <h3 className="text-2xl flex justify-center text-center uppercase tracking-xl text-gray-500">
+        <h3 className="text-2xl mobile:text-sm flex justify-center text-center uppercase tracking-xl text-gray-500">
           <div className="flex items-center">
             <BiStop color="#ef4444" />
           </div>
