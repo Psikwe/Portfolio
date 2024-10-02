@@ -19,3 +19,10 @@ export type ICard = {
   cardDescription: string;
   link?: string;
 };
+
+export type ISeo = {
+  title: string;
+  description: string;
+  name: string;
+  type: string;
+};

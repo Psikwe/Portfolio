@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
-import { Cursor, Typewriter } from "react-simple-typewriter";
-import { motion, useAnimationFrame } from "framer-motion";
-type IBanner = {};
+import React, { useRef } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { useAnimationFrame } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+import SEO from "../../components/seo/_component";
 
 const Banner: React.FC = ({}) => {
   const rotation = useRef(0);
@@ -14,6 +15,13 @@ const Banner: React.FC = ({}) => {
 
   return (
     <>
+      <SEO
+        title="Dennis Boateng"
+        description="Dennis Boateng - Software Engineer"
+        name="Dennis Boateng - Software Engineer"
+        type="Dennis Boateng - Software Engineer"
+      />
+
       <div id="main" className="relative overflow-hidden">
         <div className="flex justify-end">
           <svg

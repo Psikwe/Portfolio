@@ -1,12 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { footerItems } from "./_data";
+import SEO from "../../components/seo/_component";
 
 interface Props {}
 
 const Footer = (props: Props) => {
   return (
     <>
+      <SEO
+        title="Dennis Boateng"
+        description="Dennis Boateng - Software Engineer"
+        name="Dennis Boateng - Software Engineer"
+        type="Dennis Boateng - Software Engineer"
+      />
       <div className="flex justify-center p-5 mt-20">
         {footerItems.map((f) => (
           <a key={f.key} target="_blank" href={f.link}>

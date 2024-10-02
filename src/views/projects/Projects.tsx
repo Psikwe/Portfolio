@@ -32,10 +32,17 @@ import {
   workoutStack,
 } from "./data";
 import { BiStop } from "react-icons/bi";
+import SEO from "../../components/seo/_component";
 
 const Projects = () => {
   return (
     <>
+      <SEO
+        title="Dennis Boateng"
+        description="Dennis Boateng - Software Engineer"
+        name="Dennis Boateng - Software Engineer"
+        type="Dennis Boateng - Software Engineer"
+      />
       <div id="projects" className="scroll-mt-32 mt-28 laptop-xl:mx-72 ">
         <div className="text-gray-500 flex justify-center text-center uppercase mobile:text-sm text-2xl tracking-xl">
           <div className="mobile:w-4 flex items-center">
@@ -64,11 +71,8 @@ const Projects = () => {
           ))}
           description={mtnDescription.desc}
           footer={mtnFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
-              <span
-                key={index}
-                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
-              >
+            <a key={index} target="_blank" href={link.link}>
+              <span className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs">
                 <span className="pr-1">{link.name}</span>
                 {link.github}
               </span>
@@ -89,11 +93,8 @@ const Projects = () => {
           ))}
           description={mtnBeninDescription.desc}
           footer={mtnBeninFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
-              <span
-                key={index}
-                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
-              >
+            <a key={index} target="_blank" href={link.link}>
+              <span className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs">
                 <span className="pr-1">{link.name}</span>
                 {link.github}
               </span>
@@ -114,11 +115,8 @@ const Projects = () => {
           ))}
           description={nabsTripsDescription.desc}
           footer={nabsJobsFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
-              <span
-                key={index}
-                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
-              >
+            <a key={index} target="_blank" href={link.link}>
+              <span className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs">
                 <span className="pr-1">{link.name}</span>
                 {link.github}
               </span>
@@ -139,7 +137,7 @@ const Projects = () => {
           ))}
           description={nabsTripsDescription.desc}
           footer={nabsTripsFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
+            <a key={index} target="_blank" href={link.link}>
               <span
                 key={index}
                 className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
@@ -164,7 +162,7 @@ const Projects = () => {
           ))}
           description={resterDescription.desc}
           footer={resterFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
+            <a key={index} target="_blank" href={link.link}>
               <span
                 key={index}
                 className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
@@ -189,11 +187,8 @@ const Projects = () => {
           ))}
           description={ttomDescription.desc}
           footer={ttomFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
-              <span
-                key={index}
-                className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
-              >
+            <a key={index} target="_blank" href={link.link}>
+              <span className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs">
                 <span className="pr-1">{link.name}</span>
                 {link.github}
               </span>
@@ -214,7 +209,7 @@ const Projects = () => {
           ))}
           description={stockupDescription.desc}
           footer={stockupFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
+            <a key={index} target="_blank" href={link.link}>
               <span
                 key={index}
                 className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"
@@ -239,7 +234,7 @@ const Projects = () => {
           ))}
           description={workoutDescription.desc}
           footer={workoutFooter.map((link, index) => (
-            <a target="_blank" href={link.link}>
+            <a key={index} target="_blank" href={link.link}>
               <span
                 key={index}
                 className="flex items-center bg-gray-400 px-2 py-1 rounded-sm mr-5  text-xs"

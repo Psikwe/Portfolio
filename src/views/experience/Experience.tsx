@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Card from "../../reusables/Card";
 import { BiStop } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
+import SEO from "../../components/seo/_component";
 
 type Props = {};
 
@@ -20,6 +21,12 @@ const Experience: React.FC = (props: Props) => {
 
   return (
     <>
+      <SEO
+        title="Dennis Boateng"
+        description="Dennis Boateng - Software Engineer"
+        name="Dennis Boateng - Software Engineer"
+        type="Dennis Boateng - Software Engineer"
+      />
       <div id="experience" className="scroll-mt-32  mt-28 laptop-xl:mx-72">
         <h3 className="text-2xl mobile:text-sm flex justify-center text-center uppercase tracking-xl text-gray-500">
           <div className="flex items-center">

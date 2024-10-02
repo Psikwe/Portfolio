@@ -22,10 +22,6 @@ const Navbar: React.FC<INavbar> = ({}) => {
       navLink: "#about",
       navId: 2,
     },
-    // {
-    //   navName: "What I Do",
-    //   navLink: "#what-i-do",
-    // },
 
     {
       navName: "Projects",
@@ -46,6 +42,11 @@ const Navbar: React.FC<INavbar> = ({}) => {
       navName: "Experience",
       navLink: "/#experience",
       navId: 5,
+    },
+    {
+      navName: "Whatsapp",
+      navLink: "https://api.whatsapp.com/send?phone=233506068327",
+      navId: 6,
     },
   ];
 

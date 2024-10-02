@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { data } from "./skillsImages";
 import { BiStop } from "react-icons/bi";
+import SEO from "../../components/seo/_component";
 type Props = {};
 
 const Skills: React.FC = ({}) => {
@@ -9,6 +10,12 @@ const Skills: React.FC = ({}) => {
 
   return (
     <>
+      <SEO
+        title="Dennis Boateng"
+        description="Dennis Boateng - Software Engineer"
+        name="Dennis Boateng - Software Engineer"
+        type="Dennis Boateng - Software Engineer"
+      />
       <div id="skills" className="scroll-mt-32 mt-28 laptop-xl:mx-72 ">
         <div className="text-gray-500 flex justify-center text-center uppercase text-2xl tracking-xl">
           <div className="mobile:w-4 flex items-center">
