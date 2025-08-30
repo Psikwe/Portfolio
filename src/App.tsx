@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Banner from "./views/banner/Banner";
 import About from "./views/about/About";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import Skills from "./views/skills/Skills";
 import Experience from "./views/experience/Experience";
 import Projects from "./views/projects/Projects";

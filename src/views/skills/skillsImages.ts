@@ -6,6 +6,7 @@ import reactLogo from "../../assets/images/react.png";
 import nodeLogo from "../../assets/images/node.png";
 import mongodbLogo from "../../assets/images/mongodb.png";
 import reactNative from "../../assets/images/react-native.png";
+import java from "../../assets/images/javaLogo.png";
 
 export const data = {
   skillsContent: [
@@ -41,6 +42,10 @@ export const data = {
     {
       name: "react-native",
       logo: reactNative,
+    },
+    {
+      name: "java",
+      logo: java,
     },
   ],
 };
